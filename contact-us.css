@@ -259,6 +259,7 @@ body {
         margin-bottom: 20px;
     }
     .form-container {
+        min-width: 300px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -270,7 +271,7 @@ body {
     }
     .form-input {
         height: 40px;
-        width: 380px;
+        width: 650px;
         border-style: solid;
         border-width: 1px;
         border-color:lightgray;
@@ -280,7 +281,7 @@ body {
     }
     .form-email-input {
         height: 40px;
-        width: 220px;
+        width: 340px;
         border-style: solid;
         border-width: 1px;
         border-color:lightgray;
@@ -336,6 +337,7 @@ body {
     }
     .form-textarea {
         border-style: solid;
+        width: 500px;
         border-width: 1px;
         border-color:lightgray;
         background-color: whitesmoke;
@@ -344,11 +346,13 @@ body {
         width: 450px;
     }
     .text-container {
+        min-width: 100px;
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
     }
     .description-width {
+        min-width: 100px;
         padding: 20px;
         margin-top: 60px;
         display: flex;
@@ -364,7 +368,7 @@ body {
         color: azure;
     }
     .about-description {
-        width: 450px;
+        min-width: 450px;
         font-family: "Roboto";
         font-size: 14px;
         font-weight: bold;
