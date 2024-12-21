@@ -211,6 +211,7 @@ body {
 
     .navbar-mobile {
         background: linear-gradient(to left, #ffffff, #042861);
+        min-width: 100%;
         padding: 15px;
     }
     .icon-mobile {
