@@ -258,7 +258,6 @@ body {
         margin-bottom: 20px;
     }
     .form-container {
-        min-width: 300px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -270,7 +269,7 @@ body {
     }
     .form-input {
         height: 40px;
-        width: 650px;
+        width: 250px;
         border-style: solid;
         border-width: 1px;
         border-color:lightgray;
@@ -280,7 +279,7 @@ body {
     }
     .form-email-input {
         height: 40px;
-        width: 340px;
+        width: 240px;
         border-style: solid;
         border-width: 1px;
         border-color:lightgray;
@@ -336,7 +335,6 @@ body {
     }
     .form-textarea {
         border-style: solid;
-        width: 500px;
         border-width: 1px;
         border-color:lightgray;
         background-color: whitesmoke;
@@ -345,7 +343,6 @@ body {
         width: 450px;
     }
     .text-container {
-        min-width: 100px;
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
