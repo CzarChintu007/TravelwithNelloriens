@@ -211,7 +211,6 @@ body {
 
     .navbar-mobile {
         background: linear-gradient(to left, #ffffff, #042861);
-        min-width: 100%;
         padding: 15px;
     }
     .icon-mobile {
@@ -236,7 +235,7 @@ body {
         font-size: 14px;
     }
     .bg-container {
-        background-image: url('https://res.cloudinary.com/dz8ewlm7u/image/upload/v1734802072/cup-coffee-computer-mouse-laptop-blue-background-top-view_nbyjwn.jpg');
+        background :linear-gradient(to bottom, #FFF2D7, #FFF2D7);
         height: 100vh;
         background-size: cover;
     }
