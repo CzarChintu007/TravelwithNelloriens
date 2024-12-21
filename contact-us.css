@@ -237,7 +237,7 @@ body {
     }
     .bg-container {
         background-image: url('https://res.cloudinary.com/dz8ewlm7u/image/upload/v1734802072/cup-coffee-computer-mouse-laptop-blue-background-top-view_nbyjwn.jpg');
-        min-height: 100vh;
+        height: 100vh;
         background-size: cover;
     }
     .about-form {
