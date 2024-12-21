@@ -296,8 +296,8 @@ body {
         font-size: 14px;
     }
     .trip-details-image {
-        min-height: 250px;
-        min-width: 500px
+        height: 250px;
+        width: 500px
     }    
     .trip-details-heading {
         font-family: "Roboto";
