@@ -196,7 +196,7 @@ body {
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .mobile-icon {
         font-size: 18px;
         color: #060753;
