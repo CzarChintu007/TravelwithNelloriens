@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+@media screen and (min-width: 922px) {
+    .navbar {
+        background: linear-gradient(to right, #ffffff, #042861);
+        height: 45px;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+    }
+    .navbar-mobile {
+        display: none;
+    }
+
+    .nav-heading {
+        font-family: "Roboto";
+        padding-left: 20px;
+        color: #87CEEB;
+        font-size: 25px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .list-items {
+        margin-right: 20px;
+        font-family: "Roboto";
+        font-size: 14px;
+
+    }
+    .text-styling {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .nav-lg-display  {
+        display: none;
+    }
+    .bg-container {
+        background-image: url("https://res.cloudinary.com/dz8ewlm7u/image/upload/v1734538123/pouch-map-toy-airplane-blue-background-with-space-writing-text_gjhagl.jpg");
+        min-height: 100vh;
+        background-size: cover;
+        padding: 30px;
+    }
+    .description-width {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-bottom: 30px;
+    }
+    .about-heading {
+        font-family: "Roboto";
+        font-size: 60px;
+        color:darkcyan ;
+    }
+    .about-description {
+        width: 750px;
+        font-family: "Roboto";
+        font-size: 17px;
+        text-align: right;
+        font-weight: bold;
+        color:cadetblue;
+    }
+    .about-team {
+        font-style: oblique;
+        font-family: "Roboto";
+        color: hotpink;
+        font-weight: bold;
+    }
+    .about-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 15px;
+        padding-left: 560px;
+        font-style: oblique;
+        font-family: "Roboto";
+        align-self: center;
+        color: red;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .form-container {
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .form-text {
+        font-family: "Roboto";
+        margin: 13px;
+    }    
+    .form-input {
+        height: 40px;
+        width: 500px;
+        border-style: solid;
+        border-width: 1px;
+        border-color:lightgray;
+        background-color: whitesmoke;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+    .name-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .email-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        
+    }
+    .calculate-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .form-email-input {
+        height: 40px;
+        width: 300px;
+        border-style: solid;
+        border-width: 1px;
+        border-color:lightgray;
+        background-color: whitesmoke;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+    .form-textarea {
+        border-style: solid;
+        border-width: 1px;
+        border-color:lightgray;
+        background-color: whitesmoke;
+        padding-left: 10px;
+        margin-left: 10px;
+        
+    }
+    .submit-btn {
+        padding: 15px;
+        width: 120px;
+        border-radius: 60px;
+        font-family: "Roboto";
+        font-size: 12px;
+        background-color: #d3d9e2;
+        color: #060753;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .submit-btn:hover {
+        background-color: #04255e;
+        color: #ffffff;
+        transform: scale(1.1);
+    }
+    .rupee-icon {
+        padding-top: 16px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .price-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .Price-text {
+        font-family: "Roboto";
+        color: red;
+        margin-right: 130px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    .mobile-icon {
+        font-size: 18px;
+        color: #060753;
+    }
+
+    .navbar {
+        display: none;
+    }
+    .nav-lg-display  {
+        display: none;
+    }
+
+    .navbar-mobile {
+        background: linear-gradient(to left, #ffffff, #042861);
+        padding: 15px;
+    }
+    .icon-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    .text-styling {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style: none;
+    }
+     .mobile-display {
+        display: none;
+    }
+    .list-items-mobile {
+        font-family: "Roboto";
+        font-size: 14px;
+    }
+    .bg-container {
+        background-image: url('https://res.cloudinary.com/dz8ewlm7u/image/upload/v1734678515/freepik__720-x-576__69898_mrxrsm.png');
+        min-height: 100vh;
+        background-size: cover;
+    }
+    .about-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        font-style: oblique;
+        font-family: "Roboto";
+        align-self: center;
+        color: red;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .name-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .form-text {
+        font-family: "Roboto";
+        margin: 13px;
+    }
+    .form-input {
+        height: 40px;
+        width: 380px;
+        border-style: solid;
+        border-width: 1px;
+        border-color:lightgray;
+        background-color: whitesmoke;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+    .form-email-input {
+        height: 40px;
+        width: 220px;
+        border-style: solid;
+        border-width: 1px;
+        border-color:lightgray;
+        background-color: whitesmoke;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+    .email-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        
+    }
+    .calculate-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .submit-btn {
+        padding: 15px;
+        margin-left: 10px;
+        width: 120px;
+        height: 50px;
+        border-radius: 60px;
+        font-family: "Roboto";
+        font-size: 12px;
+        background-color: #d3d9e2;
+        color: #060753;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .submit-btn:hover {
+        background-color: #04255e;
+        color: #ffffff;
+        transform: scale(1.1);
+    }
+    .rupee-icon {
+        padding-top: 16px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .price-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .Price-text {
+        background-color:whitesmoke;
+        font-family: "Roboto";
+        color: darkred;
+        margin-right: 10px;
+    }
+    .form-textarea {
+        border-style: solid;
+        border-width: 1px;
+        border-color:lightgray;
+        background-color: whitesmoke;
+        padding-left: 10px;
+        margin-left: 10px;
+        width: 450px;
+    }
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .description-width {
+        padding: 20px;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    .about-heading {
+        font-family: "Roboto";
+        font-size: 40px;
+        font-weight: bold;
+        color: azure;
+    }
+    .about-description {
+        width: 450px;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: bold;
+        text-align: left;
+        color: whitesmoke;
+    }
+    .about-team {
+        font-style: oblique;
+        font-family: "Roboto";
+        font-size: 13px;
+        color: bisque;
+    }
+}

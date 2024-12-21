@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+@media screen and (min-width: 922px) {
+    .bg-container {
+        background-image: url('https://res.cloudinary.com/dz8ewlm7u/image/upload/v1732717649/flat-lay-hat-notebook-arrangement_3_vndrob.jpg');
+        height: 100vh;
+        padding: 30px;
+        padding-left: 90px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        background: linear-gradient(to right, #ffffff, #042861);
+        height: 45px;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        box-shadow: 5px 5px 15px #C2DFFF;
+        position: fixed;
+    }
+
+    .nav-heading {
+        font-family: "Roboto";
+        padding-left: 20px;
+        color: #87CEEB;
+        font-size: 25px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .list-items {
+        margin-right: 20px;
+        font-family: "Roboto";
+        font-size: 14px;
+
+    }
+
+    .text-styling {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .main-image {
+        margin-top: 10px;
+        width: 20%;
+        line-height: 0px;
+    }
+
+    .main-heading {
+        font-family: "Open Sans";
+        color: #082b61;
+        width: 70%;
+        font-size: 50px;
+    }
+
+    .main-description {
+        font-family: "Open Sans";
+        color: #082b61;
+        width: 80%;
+        font-size: 25px;
+        font-weight: bold;
+        height: 20%;
+    }
+
+    .book-button {
+        padding: 15px;
+        width: 200px;
+        border-radius: 60px;
+        font-family: "Roboto";
+        font-size: 20px;
+        background-color: #d3d9e2;
+        color: #060753;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .book-button:hover {
+        background-color: #04255e;
+        color: #ffffff;
+        transform: scale(1.1);
+    }
+    .navbar-mobile  {
+        display: none;
+    }
+    
+
+}
+
+@media screen and (max-width: 576px) {
+    .mobile-icon {
+        font-size: 18px;
+        color: #060753;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .nav-sm-display  {
+        display: none;
+    }
+
+    .navbar-mobile {
+        background: linear-gradient(to left, #ffffff, #042861);
+        padding: 15px;
+    }
+    .icon-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    .main-image {
+        width: 50%;
+    }
+
+    .bg-container {
+        background-image: url('https://img.freepik.com/free-photo/toy-plane-retro-photo-camera-with-coconut_23-2148109252.jpg?t=st=1734449289~exp=1734452889~hmac=1fef19466bd8a1b221880c5bb8ef8f0d3b3d20601fb2962ebd48721e468f707a&w=360');
+        height: 100vh;
+        background-size: cover;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-top: 50px;
+    }
+
+    .text-styling {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style: none;
+    }
+    .main-heading {
+        font-family: "Open Sans";
+        color: #082b61;
+        font-size: 21px;
+        text-align: right;
+    }
+    .main-description {
+        font-family: "Open Sans";
+        color: #082b61;
+        font-size: 16px;
+        font-weight: bold;
+        height: 20%;
+        text-align: right;
+    }
+    .book-button {
+        padding: 15px;
+        width: 120px;
+        border-radius: 60px;
+        font-family: "Roboto";
+        font-size: 13px;
+        background-color: #d3d9e2;
+        color: #060753;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .book-button:hover {
+        background-color: #04255e;
+        color: #ffffff;
+        transform: scale(1.1);
+    }
+    .mobile-display {
+        display: none;
+    }
+    .list-items-mobile {
+        font-family: "Roboto";
+        font-size: 14px;
+    }
+    hr {
+        width: 600px;
+    }
+}

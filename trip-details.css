@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+@media screen and (min-width: 922px) {
+    .navbar {
+        background: linear-gradient(to right, #ffffff, #042861);
+        height: 45px;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+    }
+    .nav-heading {
+        font-family: "Roboto";
+        padding-left: 20px;
+        color: #87CEEB;
+        font-size: 25px;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .list-items {
+        margin-right: 20px;
+        font-family: "Roboto";
+        font-size: 14px;
+    }
+    .text-styling {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .trip-details-image {
+        height: 500px;
+        width: 1450px
+    }
+    .ooty-image {
+        height: 700px;
+    }
+    .manali-image {
+        height: 600px;
+    }
+    .bg-container {
+        background: whitesmoke;
+        overflow-y: auto;
+    }
+    .trip-details-container {
+        background-color: smokewhite;
+        padding: 30px;
+    }
+    .trip-details-heading {
+        font-family: "Roboto";
+        font-size: 40px;
+    }
+    .heading-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pricing-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .column-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .price-button {
+        margin-left: 5px;
+        width: 80px;
+        height: 30px;
+        border-radius: 16px;
+        border-style: none;
+        background-color: #90b0e2;
+        color: #ffffff;
+    }
+    .price-button:hover{
+        background-color: #042861;
+        cursor: pointer;
+    }
+    .button-text {
+        margin-left: 8px;
+        font-family: "Roboto";
+        font-size: 15px;
+    }
+    .rupee-icon {
+        padding-top: 4px;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .details-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .calender-icon {
+        padding-top: 14px;
+        color:  #042861;
+        font-size: 20px;
+    }
+    .icon-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        align-items: flex-start;
+    }
+    .icon-text {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 20px;
+        font-size: 16px;
+        color: rgb(5, 87, 87);
+    }
+    .trip-details-text {
+        font-family: "Open Sans";
+        width: 160px;
+        font-size: 14px;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .button-styling {
+        background-color: #FFF2D7;
+        width: 150px;
+        height: 50px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border: 3px;
+        
+        border-style: none;
+        border-color: #90b0e2;
+        font-family: "Roboto";
+        color: #042861;
+    }
+    .overview-container {
+        background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
+        min-height: 70vh;
+        padding: 30px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: 0px 13px 15px grey;
+    }
+    .heading {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fc7c55;
+    }
+    .description {
+        font-family: Arial, Helvetica, sans-serif;
+        color:black;
+        line-height: 2.5;
+    }
+    .remove-content-display {
+        display: none;
+    }
+    .add-button-color {
+        background-color: #F98866;
+    }
+    .icon-heading {
+        display: flex;
+        flex-direction: row;
+    }
+    .itineary-container {
+        background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
+        min-height: 100vh;
+        padding: 30px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: 0px 13px 10px grey;
+    }
+    .itineary-container-icon {
+        font-size: 25px;
+        color: #042861;
+        padding-top: 23px;
+    }
+    .itineary-container-circle-icon {
+        font-size: 15px;
+        color: #042861;
+        padding-top: 28px;
+    }
+    .itineary-container-heading {
+        font-family: "Open Sans";
+        font-size: 25px;
+        margin-left: 70px;
+    }
+    .itineary-container-description {
+        font-family: "Open Sans";
+        font-size: 15px;
+        margin-left: 70px;
+    }
+    .includes-container {
+        background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
+        min-height: 80vh;
+        padding: 30px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: 0px 13px 10px grey;
+    }
+    .includes-heading {
+        color: rgb(46, 44, 44);
+    }
+    .points-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .check-icon {
+        color: #b89d04;
+        padding-top: 17px;
+    }
+    .points-text {
+        font-family: "Verdana";
+        margin-left: 15px;
+    }
+    .x-icon {
+        color: #f70e0e;
+        padding-top: 17px;
+    }
+    .available-dates-container {
+        background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
+        min-height: 30vh;
+        padding: 30px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: 0px 13px 10px grey;
+    }
+    .dates-text {
+        font-family: "Verdana";
+    }
+    .custom-container {
+        background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
+        min-height: 30vh;
+        padding: 30px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: 0px 13px 10px grey;
+    }
+    hr {
+        width: 1100px;
+        color: #ffffff;
+    }
+    .navbar-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mobile-icon {
+        font-size: 18px;
+        color: #060753;
+    }
+
+    .navbar {
+        display: none;
+    }
+    .nav-lg-display  {
+        display: none;
+    }
+
+    .navbar-mobile {
+        background: linear-gradient(to left, #ffffff, #042861);
+        padding: 15px;
+    }
+    .icon-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    .text-styling {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style: none;
+    }
+     .mobile-display {
+        display: none;
+    }
+    .list-items-mobile {
+        font-family: "Roboto";
+        font-size: 14px;
+    }
+    .trip-details-image {
+        height: 250px;
+        width: 500px
+    }    
+    .trip-details-heading {
+        font-family: "Roboto";
+        font-size: 30px;
+    }
+    .trip-details-container {
+        background-color: smokewhite;
+        padding: 30px;
+    }
+    .details-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: flex-start;
+    }
+    .icon-text {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        color: rgb(5, 87, 87);
+    }
+    .calender-icon {
+        padding-top: 14px;
+        color:  #042861;
+        font-size: 20px;
+    }
+    .trip-details-text {
+        font-family: "Open Sans";
+        width: 160px;
+        font-size: 14px;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        display: none;
+    }
+    .overview-container {
+        background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
+        min-height: 70vh;
+        padding: 30px;
+    }
+    .heading {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        color: #fc7c55;
+    }
+    .description {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        line-height: 2.5;
+        font-size: 15px;
+    }
+    .icon-heading {
+        display: flex;
+        flex-direction: row;
+    }
+    .itineary-container {
+        background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
+        min-height: 100vh;
+        padding: 30px;
+    }
+    .itineary-container-icon {
+        font-size: 18px;
+        color: #fc7c55;
+        padding-top: 18px;
+       
+    }
+    .itineary-container-circle-icon {
+        font-size: 15px;
+        color: #fc7c55;
+        padding-top: 18px;
+    }
+    .itineary-container-heading {
+        font-family: "Open Sans";
+        font-size: 18px;
+        margin-left: 30px;
+    }
+    .itineary-container-description {
+        font-family: "Open Sans";
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .includes-container {
+        background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
+        min-height: 80vh;
+        padding: 30px;
+    }
+    .includes-heading {
+        color: rgb(46, 44, 44);
+        font-size: 20px;
+    }
+    .points-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .check-icon {
+        color: #b89d04;
+        padding-top: 17px;
+    }
+    .points-text {
+        font-family: "Verdana";
+        font-size: 14px;
+        margin-left: 15px;
+    }
+    .x-icon {
+        color: #f70e0e;
+        padding-top: 17px;
+    }
+    .available-dates-container {
+        background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
+        min-height: 30vh;
+        padding: 30px;
+    }
+    .dates-text {
+        font-family: "Verdana";
+        font-size: 14px;
+    }
+    .custom-container {
+        background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
+        min-height: 30vh;
+        padding: 30px;
+    }
+    .heading-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pricing-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .price-button {
+        margin-left: 15px;
+        width: 70px;
+        height: 30px;
+        border-radius: 16px;
+        border-style: none;
+        background-color: #90b0e2;
+        color: #ffffff;
+        font-family: "Roboto";
+    }
+    .price-button:hover{
+        background-color: #042861;
+        cursor: pointer;
+    }
+    .button-text {
+        margin-left: 15px;
+        font-family: "Roboto";
+        font-size: 15px;
+    }
+    .rupee-icon {
+        padding-top: 4px;
+        font-size: 25px;
+    }
+}

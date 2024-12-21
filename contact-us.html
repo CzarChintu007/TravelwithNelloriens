@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <script src="https://kit.fontawesome.com/143ff68a67.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact-us.css"/>
+</head>
+<body>
+    <nav class="navbar-mobile">
+        <div class="icon-mobile">
+            <i class="fa-solid fa-bars mobile-icon" id="barIcon"></i>
+            <i class="fa-solid fa-xmark mobile-icon nav-lg-display" id="xIcon"></i>
+        </div>
+        <ul class=" nav-lg-display" id="listItems">
+            <li class="list-items-mobile"><a href="Travel.html" class="text-styling">Home</a></li><br>
+            <li class="list-items-mobile"><a href="itineary.html" class="text-styling">All Trips</a></li><br>
+            <li class="list-items-mobile"><a href="itineary.html" class="text-styling">Group Trips</a></li><br>
+            <li class="list-items-mobile"><a href="itineary.html" class="text-styling">Weekend Trips</a></li><br>
+            <li class="list-items-mobile"><a href="contact-us.html" class="text-styling">Contact Us</a></li><br>
+        </ul>
+    </nav>
+    <nav class="navbar">
+        <ul>
+            <li class="list-items"><a href="Travel.html" class="text-styling" >Home</a></li>
+            <li class="list-items"><a href="itineary.html" class="text-styling">All Trips</a></li>
+            <li class="list-items"><a href="itineary.html" class="text-styling">Group Trips</a></li>
+            <li class="list-items"><a href="itineary.html" class="text-styling">Weekend Trips</a></li>
+            <li class="list-items"><a href="contact-us.html" class="text-styling">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="bg-container">
+        <div class="form-container">
+            <p class="about-form">***Please fill the form to contact our team for pricing details***</p>
+            <form id="myForm">
+                <div class="name-container">
+                    <label class="form-text" for="firstName">First Name: </label>
+                    <input type="text" class="form-input" id="firstName" placeholder="Enter First Name">
+                    <label class="form-text" for="lastName">Last Name: </label>
+                    <input type="text" class="form-input" id="lastName" placeholder="Enter Lasr Name">
+                    <label class="form-text" for="email">Email Address: </label>
+                    <input type="text" class="form-input" id="email" placeholder="Enter Email Address">
+                    <label class="form-text" for="number">contact Number:</label>
+                    <input type="text" class="form-email-input" id="number" placeholder="Enter your Contact Number">
+                </div>
+                <div class="email-container">
+                    <div class="text-container">
+                        <label class="form-text" for="numberOfAdultsInput" id="numberOfAdults">Number of Adults:</label>
+                        <input type="text" class="form-email-input" id="numberOfAdultsInput" placeholder="Enter Number of Adults">
+                    </div>
+                    <div class="text-container">
+                        <label class="form-text">Number of Childern:</label>
+                        <input type="text" class="form-email-input" placeholder="Enter Number of Childern">
+                    </div>
+                </div>
+                <div class="calculate-container">
+                    <button class="submit-btn" id="calculateButton">Calculate</button>
+                    <div class="price-container">
+                        <i class="fa-solid fa-indian-rupee-sign rupee-icon"></i>
+                        <p id="calculatedPrice" class="Price-text">Please note price is approx</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <label class="form-text" for="message">Your Message:</label>
+                    <textarea rows="10" cols="80" class="form-textarea" id="message" placeholder="Enter your Message"></textarea>
+                </div>
+                <button class="submit-btn" id="submitButton">Submit</button>
+            </form>
+        </div>
+
+        <div class="description-width">
+            <h1 class="about-heading">About Us</h1>
+            <p class="about-description">
+                Travel with Nellorieans is a vibrant tourism venture designed to provide hassle-free and memorable 
+                travel experiences, specializing in holiday packages and weekend getaways. Catering to both adventure 
+                enthusiasts and relaxation seekers, the venture curates personalized trips that suit diverse preferences 
+                and budgets. Whether you're dreaming of serene mountain retreats, exciting beach holidays, or quick 
+                weekend escapes, Travel with Nellorieans has a package tailored just for you.
+                The venture emphasizes seamless planning, covering everything from accommodation and transportation 
+                to curated itineraries filled with local experiences. With a focus on customer satisfaction, it ensures 
+                that every journey is filled with delightful moments, offering travelers a chance to explore, unwind, and create lasting memories.
+                Choose Travel with Nellorieans for a trusted companion in discovering the wonders of new destinations, 
+                one trip at a time!
+            </p>
+            <i class="about-team">- from team Travel with Nellorieans</i>
+        </div>
+    </div>
+    <script src="contact-us.js"></script>
+</body>
+
+</html>

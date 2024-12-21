@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+@media screen and (min-width: 922px) {
+    .navbar {
+        background: linear-gradient(to right, #ffffff, #042861);
+        height: 45px;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        box-shadow: 5px 5px 15px #C2DFFF;
+        position: fixed;
+    }
+    .navbar-mobile {
+        display: none;
+    }
+
+    .nav-heading {
+        font-family: "Roboto";
+        padding-left: 20px;
+        color: #87CEEB;
+        font-size: 25px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .list-items {
+        margin-right: 20px;
+        font-family: "Roboto";
+        font-size: 14px;
+
+    }
+    .text-styling {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .bg-container {
+        background: radial-gradient(circle, #ffffff, #042861);
+        min-height: 100vh;
+        background-size: cover;
+        padding: 30px;
+    
+    }
+    .all-cards-container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+    .card-container {
+        background-color: #ffffff;
+        min-height: 60vh;
+        width: 44vh;
+        display: flex;
+        margin-bottom: 30px;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-left: 35px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .card-container:hover {
+        transform: scale(1.03);
+    }
+    .card-heading {
+        font-family: "Roboto";
+        font-size: 40px;
+        padding-top: 10px;
+        color: rgb(26, 10, 71);
+    }
+    .card-image {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+   
+    .location-name {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-left: 15px;
+        font-size: 23px;
+        font-weight: bolder;
+    }
+    .details-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        overflow-y: auto;
+    }
+    .location-container {
+        display: flex;
+        padding-bottom: 15px;
+        align-items: last baseline;
+    }
+    .location-icon {
+        margin: 0px;
+        font-size: medium;
+    }
+    .state-name {
+        margin: 0px;
+        font-size: 15px;
+        padding-left: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .description {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .book-button {
+        padding: 15px;
+        min-width: 120px;
+        border-radius: 60px;
+        font-family: "Roboto";
+        font-size: 12px;
+        background-color: #ffffff;
+        color: #060753;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .book-button:hover {
+        background-color: #aa3904;
+        color: #ffffff;
+        transform: scale(1.1);
+    }
+    .button-container {
+        padding: 15px;
+    }
+    .nav-lg-display  {
+        display: none;
+    }
+    .card-order {
+        order: -7;
+    }
+   
+}
+
+@media screen and (max-width: 576px) {
+    .mobile-icon {
+        font-size: 18px;
+        color: #060753;
+    }
+
+    .navbar {
+        display: none;
+    }
+    .nav-lg-display  {
+        display: none;
+    }
+
+    .navbar-mobile {
+        background: linear-gradient(to left, #ffffff, #042861);
+        padding: 15px;
+    }
+    .icon-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    .text-styling {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style: none;
+    }
+     .mobile-display {
+        display: none;
+    }
+    .list-items-mobile {
+        font-family: "Roboto";
+        font-size: 14px;
+    }
+    .bg-container {
+        background: radial-gradient(circle, #ffffff, #042861);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        overflow-y: auto;
+        padding: 10px;
+    }
+    .card-container {
+        background-color: #ffffff;
+        height: 30vh;
+        width: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        border-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .mobile-view {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    .card-heading {
+        font-family: "Roboto";
+        font-size: 30px;
+        padding-top: 10px;
+        text-align: left;
+        color: rgb(247, 246, 248);
+    }
+    .card-image {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 40%;
+        
+    }
+    .location-name {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-left: 15px;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .details-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        overflow-y: auto;
+    }
+    .location-container {
+        display: flex;
+        padding-bottom: 3px;
+        align-items: last baseline;
+    }
+    .location-icon {
+        margin: 0px;
+        font-size: 10px;
+    }
+    .state-name {
+        margin: 0px;
+        font-size: 12px;
+        padding-left: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .description {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: none;
+    }
+    .book-button {
+        margin-top: 5px;
+        padding: 15px;
+        height: 45px;
+        min-width: 100px;
+        border-radius: 20px;
+        font-family: "Roboto";
+        font-size: 12px;
+        background-color: #ffffff;
+        color: #060753;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .book-button:hover {
+        background-color: #aa3904;
+        color: #ffffff;
+        transform: scale(1.1);
+    }
+    .button-container {
+        padding: 15px;
+    }
+    .all-cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
