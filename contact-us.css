@@ -11,7 +11,7 @@ body {
     .navbar {
         background: linear-gradient(to right, #ffffff, #042861);
         height: 45px;
-        width: 100%;
+        min-width: 100%;
         z-index: 1000;
         padding: 10px;
         display: flex;
@@ -235,8 +235,9 @@ body {
         font-size: 14px;
     }
     .bg-container {
-        background-image: url('https://res.cloudinary.com/dz8ewlm7u/image/upload/v1734678515/freepik__720-x-576__69898_mrxrsm.png');
+        background-image: url('https://res.cloudinary.com/dz8ewlm7u/image/upload/v1734802072/cup-coffee-computer-mouse-laptop-blue-background-top-view_nbyjwn.jpg');
         min-height: 100vh;
+        min-width: 100vh;
         background-size: cover;
     }
     .about-form {

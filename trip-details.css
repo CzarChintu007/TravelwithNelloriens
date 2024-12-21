@@ -296,8 +296,8 @@ body {
         font-size: 14px;
     }
     .trip-details-image {
-        height: 250px;
-        width: 500px
+        min-height: 250px;
+        min-width: 500px
     }    
     .trip-details-heading {
         font-family: "Roboto";
@@ -343,6 +343,7 @@ body {
     .overview-container {
         background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
         min-height: 70vh;
+        min-width: 250px;
         padding: 30px;
     }
     .heading {

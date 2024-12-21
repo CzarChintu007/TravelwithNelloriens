@@ -11,7 +11,7 @@ body {
     .navbar {
         background: linear-gradient(to right, #ffffff, #042861);
         height: 45px;
-        width: 100%;
+        min-width: 100%;
         z-index: 1000;
         padding: 10px;
         display: flex;
@@ -200,7 +200,7 @@ body {
     .card-container {
         background-color: #ffffff;
         height: 30vh;
-        width: 70vh;
+        width: 60vh;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;

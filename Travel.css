@@ -24,7 +24,7 @@ body {
     .navbar {
         background: linear-gradient(to right, #ffffff, #042861);
         height: 45px;
-        width: 100%;
+        min-width: 100%;
         z-index: 1000;
         padding: 10px;
         display: flex;
