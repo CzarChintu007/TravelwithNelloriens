@@ -272,7 +272,6 @@ body {
 
     .navbar-mobile {
         background: linear-gradient(to left, #ffffff, #042861);
-        min-width:450px;
         padding: 15px;
     }
     .icon-mobile {
@@ -348,7 +347,7 @@ body {
     .overview-container {
         background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
         min-height: 70vh;
-        min-width: 400px;
+        min-width: 320px;
         padding: 30px;
     }
     .heading {
@@ -369,7 +368,7 @@ body {
     .itineary-container {
         background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
         min-height: 100vh;
-        min-width: 400px;
+        min-width: 320px;
         padding: 30px;
     }
     .itineary-container-icon {
@@ -396,7 +395,7 @@ body {
     .includes-container {
         background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
         min-height: 80vh;
-        min-width: 400px;
+        min-width: 320px;
         padding: 30px;
     }
     .includes-heading {
@@ -423,7 +422,7 @@ body {
     .available-dates-container {
         background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
         min-height: 30vh;
-        min-width: 400px;
+        min-width: 320px;
         padding: 30px;
     }
     .dates-text {
@@ -433,7 +432,7 @@ body {
     .custom-container {
         background:linear-gradient(to bottom, #FFF2D7, #FFF2D7);
         min-height: 30vh;
-        min-width: 400px;
+        min-width: 320px;
         padding: 30px;
     }
     .heading-price {
