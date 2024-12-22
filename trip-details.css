@@ -295,6 +295,10 @@ body {
         font-family: "Roboto";
         font-size: 14px;
     }
+    .bg-container {
+        background: whitesmoke;
+        overflow-y: auto;
+    }
     .trip-details-image {
         min-height: 250px;
         min-width: 390px
