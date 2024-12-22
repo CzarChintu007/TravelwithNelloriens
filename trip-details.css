@@ -296,7 +296,7 @@ body {
         font-size: 14px;
     }
     .trip-details-image {
-        height: 250px;
+        min-height: 250px;
         min-width: 390px
     }    
     .trip-details-heading {
